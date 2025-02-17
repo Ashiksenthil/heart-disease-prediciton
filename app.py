@@ -3,9 +3,11 @@ from flask import Flask, request, jsonify
 import joblib
 import numpy as np
 import pandas as pd
+from flask_cors import CORS
 
-# Initialize Flask app
+# Enable CORS
 app = Flask(__name__)
+CORS(app)
 
 # Load the trained model
 model = joblib.load("heart_disease_model.pkl")
