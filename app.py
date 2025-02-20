@@ -15,7 +15,7 @@ model = joblib.load("heart_disease_model.pkl")
 feature_names = [
     "age", "sex", "cp", "trestbps", "chol", "fbs", "restecg", "thalach",
     "oldpeak", "slope", "ca", "thal", "exang"
-]  # Ensure these match the features used in training!
+]  
 
 @app.route("/")
 def home():
@@ -24,19 +24,13 @@ def home():
 @app.route("/predict", methods=["POST"])
 def predict():
     try:
-        # Get input data
+        
         data = request.json
-
-        # Convert input data into a NumPy array
         features = np.array(data["features"]).reshape(1, -1)
-
-        # Convert NumPy array to Pandas DataFrame with correct column names
         df_input = pd.DataFrame(features, columns=feature_names)
 
-        # Make prediction
         prediction = model.predict(df_input)[0]
 
-        # Convert prediction to human-readable output
         result = "Heart Disease Detected" if prediction == 1 else "No Heart Disease"
 
         return jsonify({"prediction": result})
