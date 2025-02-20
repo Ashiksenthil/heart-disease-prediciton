@@ -3,12 +3,12 @@ import streamlit as st
 import numpy as np
 import requests
 
-# Streamlit UI Title
+
 st.title("💓 Heart Disease Prediction App")
 
 st.write("Enter the details below to predict if a patient has heart disease.")
 
-# Create input fields for user input
+
 age = st.number_input("Age", min_value=29, max_value=77, value=50)
 sex = st.selectbox("Sex", ["Female", "Male"])
 cp = st.selectbox("Chest Pain Type", ["Typical Angina", "Atypical Angina", "Non-Anginal Pain", "Asymptomatic"])
@@ -23,7 +23,7 @@ slope = st.selectbox("Slope of Peak Exercise ST Segment", ["Upsloping", "Flat", 
 ca = st.slider("Number of Major Vessels (0-3) Colored by Fluoroscopy", min_value=0, max_value=3, value=1)
 thal = st.selectbox("Thalassemia Type", ["Normal", "Fixed Defect", "Reversible Defect"])
 
-# Convert user input into numerical values (as required by the ML model)
+
 sex = 1 if sex == "Male" else 0
 cp = ["Typical Angina", "Atypical Angina", "Non-Anginal Pain", "Asymptomatic"].index(cp)
 fbs = 1 if fbs == "True" else 0
@@ -32,15 +32,15 @@ exang = 1 if exang == "Yes" else 0
 slope = ["Upsloping", "Flat", "Downsloping"].index(slope)
 thal = ["Normal", "Fixed Defect", "Reversible Defect"].index(thal)
 
-# Create a button for prediction
+
 if st.button("Predict"):
     # Prepare data for API request
     input_data = {
         "features": [age, sex, cp, trestbps, chol, fbs, restecg, thalach, oldpeak, slope, ca, thal, exang]
     }
 
-    # Send request to Flask API
-    api_url = "https://heart-disease-prediciton.onrender.com/predict"  # Replace with your actual API URL
+    
+    api_url = "https://heart-disease-prediciton.onrender.com/predict"
     response = requests.post(api_url, json=input_data)
 
     if response.status_code == 200:
