@@ -26,7 +26,7 @@ This project is built using the following technologies:
 ---
 
 ##  Dataset
-- **Dataset:** [Heart Disease UCI Dataset (Kaggle)](https://www.kaggle.com/datasets)  
+- **Dataset:** [Heart Disease UCI Dataset (Kaggle)](https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset)  
 - **Number of Samples:** 1025  
 - **Features Included:**
   - `age` - Age of the patient
