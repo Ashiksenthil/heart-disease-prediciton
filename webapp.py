@@ -45,6 +45,6 @@ if st.button("Predict"):
 
     if response.status_code == 200:
         result = response.json()["prediction"]
-        st.success(f"💡 Prediction: {result}")
+        st.success(f"Prediction: {result}")
     else:
         st.error("Error connecting to the API. Please try again later.")
