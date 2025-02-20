@@ -79,11 +79,11 @@ cd heart-disease-prediction
 ```sh
 pip install -r requirements.txt
 
- 3️ Run the Flask API
+3️. Run the Flask API
 ```sh
 python app.py
 
 
-4 Run the Streamlit UI
+4. Run the Streamlit UI
 ```sh
 streamlit run streamlit_app.py
