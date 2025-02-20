@@ -74,3 +74,16 @@ This project is built using the following technologies:
 ```sh
 git clone https://github.com/YourGitHubUsername/heart-disease-prediction.git
 cd heart-disease-prediction
+
+### **2 Install Dependencies**
+```sh
+pip install -r requirements.txt
+
+### **3️ Run the Flask API**
+```sh
+python app.py
+
+
+### **4 Run the Streamlit UI**
+```sh
+streamlit run streamlit_app.py
