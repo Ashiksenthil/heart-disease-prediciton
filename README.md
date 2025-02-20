@@ -63,7 +63,10 @@ This project is built using the following technologies:
   - Users can enter their medical details and get predictions instantly
 - **Deployment**
   - **Flask API Deployed on Render** 🌍
-  - **Streamlit UI Deployed Online (Optional)** 🎨
+  - **Streamlit UI Deployed Online (Optional)**
+  - **[Live Demo → Click Here](https://heart-disease-predictor-webapp.streamlit.app/)**
+- **Try the Web App Now:**  
+  -🔗 **[Heart Disease Prediction Web App](https://heart-disease-predictor-webapp.streamlit.app/)**  
 
 ---
 
