@@ -70,15 +70,12 @@ This project is built using the following technologies:
 ## How to Run the Project Locally
 📌 **Follow these steps to run the project on your local machine.**  
 
-- **Clone the Repository**
+1. Clone the Repository
 ```sh
 git clone https://github.com/YourGitHubUsername/heart-disease-prediction.git
 cd heart-disease-prediction
 
----
-
-
-### Clone the Repository
+2. Install the requirements
 ```sh
 pip install -r requirements.txt
 
@@ -87,6 +84,6 @@ pip install -r requirements.txt
 python app.py
 
 
-### **4 Run the Streamlit UI**
+4 Run the Streamlit UI
 ```sh
 streamlit run streamlit_app.py
