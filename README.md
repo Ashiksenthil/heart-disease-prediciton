@@ -70,16 +70,19 @@ This project is built using the following technologies:
 ## How to Run the Project Locally
 📌 **Follow these steps to run the project on your local machine.**  
 
-### **1️ Clone the Repository**
+- **Clone the Repository**
 ```sh
 git clone https://github.com/YourGitHubUsername/heart-disease-prediction.git
 cd heart-disease-prediction
 
-### **2 Install Dependencies**
+---
+
+
+### Clone the Repository
 ```sh
 pip install -r requirements.txt
 
-### **3️ Run the Flask API**
+ 3️ Run the Flask API
 ```sh
 python app.py
 
