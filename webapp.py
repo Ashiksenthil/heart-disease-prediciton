@@ -34,7 +34,7 @@ thal = ["Normal", "Fixed Defect", "Reversible Defect"].index(thal)
 
 
 if st.button("Predict"):
-    # Prepare data for API request
+
     input_data = {
         "features": [age, sex, cp, trestbps, chol, fbs, restecg, thalach, oldpeak, slope, ca, thal, exang]
     }
